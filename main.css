@@ -1,0 +1,114 @@
+
+/* ## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
+
+### Neutral
+
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Spartan](https://fonts.google.com/specimen/Spartan)
+- Weights: 400, 500, 700*/
+
+main  {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px ;
+  gap: 10px;
+}
+
+section{
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.test-header{
+  border: solid 1px black;
+
+}
+
+ul {
+  border: solid 1px black;
+}
+
+.testimonial{
+  border: solid 1px black;
+
+}
+
+.test1{
+
+}
+
+.test2{
+
+}
+
+.test3{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
