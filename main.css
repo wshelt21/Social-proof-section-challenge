@@ -29,56 +29,144 @@ White: hsl(0, 0%, 100%)
 
 - Family: [Spartan](https://fonts.google.com/specimen/Spartan)
 - Weights: 400, 500, 700*/
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
 
-main  {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px 100px ;
-  gap: 10px;
+
+body {
+  font-size: 15px;
+  font-family: 'Spartan', sans-serif;
 }
 
-section{
-  grid-row: 2;
+
+main {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: 50px auto 50px 300px;
+
+
+
+
+
+
+
+
+  background: hsl(0, 0%, 100%);
+  margin: 20px 0;
+  padding: 10px;
+
 }
 
-.test-header{
-  border: solid 1px black;
+.test-header {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
 
+.test-header h1 {
+  font-weight: 700;
+  font-size: 48px;
+  color: hsl(300, 43%, 22%);
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.test-header p{
+  color:  hsl(303, 10%, 53%);
+  width: 450px;
+}
+
+.five-star {
+  grid-column: 5 / 7;
+  grid-row: 2 / 3;
 }
 
 ul {
-  border: solid 1px black;
-}
-
-.testimonial{
-  border: solid 1px black;
-
-}
-
-.test1{
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 50px 50px 1fr;
+  grid-template-rows: repeat(3, 1fr);
 
 }
 
-.test2{
-
+ ul li{
+  display: flex;
+  align-items: center;
+  background-color: hsl(300, 24%, 96%);
+  margin: 10px;
+  padding-left: 30px;
+  border-radius: 10px;
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  width: 450px;
 }
 
-.test3{
+ul li:nth-child(2){
+  grid-row: 2;
+  grid-column: 2 / 3;
+}
 
+ul li:nth-child(3){
+  grid-row: 3;
+  grid-column: 3 / 4;
 }
 
 
+ul li img:nth-of-type(5n){
+  margin-right: 20px;
+}
+
+section {
+  display: flex;
+  grid-row: 4;
+  grid-column: 2 / 8;
+}
+
+section > .testimonial {
+  background-color: hsl(300, 43%, 22%);
+  padding: 50px;
+  border-radius: 10px;
+  width: 500px;
+  margin: 20px;
+}
+
+section > .testimonial:first-of-type {
+  margin-left: 0;
+}
+
+.testimonial quote {
+  font-weight: 400;
+  color: hsl(300, 24%, 96%);
+  line-height: 15px;
+}
+
+.test-name{
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  grid-template-rows: 25px 25px;
+  grid-row-gap: 10px;
+}
+
+.test-name h2{
+  font-size: 14px;
+  color: hsl(300, 24%, 96%);
+}
+
+.test-name h3{
+  font-size: 12px;
+  font-weight: 400;
+  color: hsl(333, 80%, 67%);
+  grid-column: 2 / 3;
+  grid-row: 2;
+  align-self: end;
+}
 
 
-
-
-
-
-
-
-
+.test-name > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-right: 20px;
+}
 
 
 
